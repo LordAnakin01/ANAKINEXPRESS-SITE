@@ -2407,15 +2407,29 @@ html.lenis {
 
 .main-slider__title {
   position: relative;
-  font-size: 70px;
+  font-size: 50px;
   color: var(--flowtrack-white);
   font-weight: 700;
-  line-height: 86px;
+  line-height: 60px;
   letter-spacing: 0.02em;
   text-transform: uppercase;
   margin-top: 19px;
+  margin-bottom: 20px;
   opacity: 0;
   transition: transform 1200ms ease, opacity 1200ms ease;
+  transform: translateX(-200px);
+}
+
+.main-slider__text {
+  position: relative;
+  font-size: 22px;
+  color: var(--flowtrack-white);
+  font-weight: 400;
+  line-height: 1.5;
+  margin-bottom: 30px;
+  max-width: 500px;
+  opacity: 0;
+  transition: transform 1400ms ease, opacity 1400ms ease;
   transform: translateX(-200px);
 }
 
@@ -2546,6 +2560,12 @@ html.lenis {
   opacity: 1;
   transform: translateX(0);
   transition-delay: 1500ms;
+}
+
+.active .main-slider__text {
+  opacity: 1;
+  transform: translateX(0);
+  transition-delay: 1600ms;
 }
 
 .active .main-slider__btn-and-video-box {
@@ -3499,6 +3519,16 @@ html.lenis {
   font-weight: 700;
   line-height: 60px;
   letter-spacing: -0.04em;
+  margin-bottom: 15px;
+}
+
+.about-one__subtitle {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: -0.016em;
+  color: var(--flowtrack-base);
+  margin-bottom: 25px;
 }
 
 .about-one__text {
